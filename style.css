@@ -69,18 +69,18 @@ h1{
 
  .gridContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto;
    grid-column-gap: 10px;
    grid-row-gap: 10px;
     grid-template-areas: 
-    "header header header header"
-    "log log log log"
-    "inicio inicio inicio inicio"
-    "subt subt subt subt"
-    "foto foto foto foto"
-    "foto foto foto foto"
-    "footerUno footerUno footerUno footerUno";   
+    "header header header"
+    "log log log"
+    "inicio inicio inicio"
+    "subt subt subt"
+    "foto foto foto"
+    "foto foto foto"
+    "footerUno footerUno footerUno";   
   }
 
   .headerHtml{
@@ -118,8 +118,8 @@ h2{
 .mes img{
     height: 250px;
     width: 250px;
-   box-shadow: 3px 5px 15px 0 black;
-   margin: 30px;
+    box-shadow: 3px 5px 15px 0 black;
+    margin: 30px;
 }
 
  .mes{
@@ -260,6 +260,7 @@ button{
 .relojes-img{
     width: 200px;
     height: 200px;
+    box-shadow: 3px 5px 15px 0 black;
 }
 .footerDos{
     grid-area: footerDos;
@@ -386,7 +387,8 @@ table{
 fieldset{
     height: 300px;
     width: 40%;
-    background-color: aquamarine;
+    background: rgb(191,219,252);
+    background-image: radial-gradient(circle, rgba(191,219,252,1) 11%, rgba(233,148,230,0.5410539215686274) 56%);
 }
 
 fieldset div{
