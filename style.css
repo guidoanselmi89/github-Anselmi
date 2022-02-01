@@ -41,12 +41,17 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 20px;
-    padding: 5px;
+    padding: 30px;
     display: inline-block;
     text-align: center;
     position: relative;
     bottom: 0; 
+    transition: all 0.8s;
 }
+ .navButton:hover{
+    transform: scale(2,2);
+    z-index: 100;
+ }
 
 .ulNav li a:hover{
     color: black;
@@ -120,6 +125,12 @@ h2{
     width: 250px;
     box-shadow: 3px 5px 15px 0 black;
     margin: 30px;
+    transition: width 2s, height 2s;
+}
+
+.mes img:hover{
+    transform: sacale(3,3);
+    z-index: 100;
 }
 
  .mes{
@@ -401,6 +412,14 @@ fieldset div{
 }
 legend{
     font-family: cursive;
+}
+
+input{
+    transition: background-color 1s;
+}
+
+input:hover{
+    background-color: rgb(227, 230, 230);
 }
 
 .formulario{
