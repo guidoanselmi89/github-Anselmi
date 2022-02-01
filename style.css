@@ -69,6 +69,31 @@ h1{
     border-radius: 200px;
 }
 
+.logo:hover{
+    animation: 1.5s logo /* infinite */;
+    backface-visibility: visible; 
+}
+
+@keyframes logo {
+  
+    20% {
+      opacity: 0.5;
+      transform: perspective(200px) rotateX(90deg);
+    }
+    
+    40% {
+      opacity: 0.5;
+      transform: perspective(200px) rotateX(-20deg);
+    }
+    
+    70% {
+      opacity: 0.5;
+      transform: perspective(200px) rotateX(10deg);
+    }
+    
+  }
+  
+
 
 /* index html */
 
@@ -322,6 +347,31 @@ button{
     height: 400px;
 }
 
+.combos-img:hover{
+    animation: 1.5s combo /* infinite */;
+    backface-visibility: visible; 
+}
+
+@keyframes combo {
+  
+    20% {
+      opacity: 0.5;
+      transform: perspective(400px) rotateX(90deg);
+    }
+    
+    40% {
+      opacity: 0.5;
+      transform: perspective(400px) rotateX(-20deg);
+    }
+    
+    70% {
+      opacity: 0.5;
+      transform: perspective(400px) rotateX(10deg);
+    }
+    
+  }
+  
+
 
 /* precios html */
 .gridPrecios{
@@ -462,6 +512,10 @@ footer{
     .inicio img{
         display: none;
     } 
+
+    .navButton{
+        padding: 5px;
+    }
 }
 
 @media only screen and (max-width:799px){
