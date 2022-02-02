@@ -70,26 +70,14 @@ h1{
 }
 
 .logo:hover{
-    animation: 1.5s logo /* infinite */;
-    backface-visibility: visible; 
+    transform: translateY(-5px);
+    animation: moverlogo 1.5s infinite;
 }
-
-@keyframes logo {
+@keyframes moverlogo{
   
-    20% {
-      opacity: 0.5;
-      transform: perspective(200px) rotateX(90deg);
-    }
-    
-    40% {
-      opacity: 0.5;
-      transform: perspective(200px) rotateX(-20deg);
-    }
-    
-    70% {
-      opacity: 0.5;
-      transform: perspective(200px) rotateX(10deg);
-    }
+    50% {
+      transform: translateY(6px);
+    } 
     
   }
   
@@ -297,7 +285,14 @@ button{
     width: 200px;
     height: 200px;
     box-shadow: 3px 5px 15px 0 black;
+    transition: all 0.8s;
 }
+
+.relojes-img:hover{
+    transform: scale(1.5,1.5);
+    z-index: 100;
+}
+
 .footerDos{
     grid-area: footerDos;
 }
